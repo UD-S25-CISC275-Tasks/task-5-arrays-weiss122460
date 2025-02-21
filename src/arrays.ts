@@ -70,7 +70,7 @@ export const shoutIfExclaiming = (messages: string[]): string[] => {
  * 4 letters long.
  */
 export function countShortWords(words: string[]): number {
-   let count: number = 0;
+   //let count: number = 0;
     return    words.filter(word => word.length < 4).length;
 }
 
@@ -112,7 +112,7 @@ export function makeMath(addends: number[]): string {
  * And the array [1, 9, 7] would become [1, 9, 7, 17]
  */
 export function injectPositive(values: number[]): number[] {
-    const result = [...values]; // Create a copy of the input array
+    const result = [...values]; 
     if(result.every(value => value > 0)){
         const sum: number = result.reduce((sum, num) => sum + num, 0);
         result.push(sum);
